@@ -234,7 +234,7 @@ window.addEventListener("DOMContentLoaded", () => {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
 
-            let statusMessage = document.createElement('div');
+            let statusMessage = document.createElement('img');
             statusMessage.src = message.loading;
             statusMessage.style.cssText = `
                 display: block;
@@ -275,7 +275,7 @@ window.addEventListener("DOMContentLoaded", () => {
         openModal();
 
         const thanksModal = document.createElement('div');
-        thanksModal.classList.add('.modal__dialog');
+        thanksModal.classList.add('modal__dialog');
         thanksModal.innerHTML = `
             <div class="modal__content">
                 <div class="modal__close" data-close>×</div>
